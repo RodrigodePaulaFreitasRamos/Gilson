@@ -8,14 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- cria o DAO -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<c:import url="cabecalho.jsp" />
+	
+	<!-- cria a lista -->
 	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
 	
 	<table>
-		<!-- percorre contatos montando as linha da tabela -->
+		<!-- for -->
 		<c:forEach var="contato" items="${dao.lista }">
 			<tr>
 				<td>${contato.nome}</td>
+				<td>
 				<td>${contato.email}</td>
 				<td>
 					<c:if test="${not empty contato.email}">
