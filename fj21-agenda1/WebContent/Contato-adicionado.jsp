@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<img src="imagens/caelum.png" />
-	<h2>Agenda de Contatos do Yamaguchi</h2>
-	<hr />
+	Contato ${param.nome} adicionado com sucesso
 </body>
 </html>
