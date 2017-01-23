@@ -15,12 +15,15 @@
 	<c:import url="cabecalho.jsp" />
 	
 	<!-- cria a lista -->
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
 	
 	<table>
 		<!-- for -->
-		<c:forEach var="contato" items="${dao.lista}">
+		<c:forEach var="contato" items="${contatos}">
+		
 			<tr>
+			<td>
+			<a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">Remover</a>
+			</td>
 				<td>${contato.nome}</td>
 				<td>
 				<c:if test="${not empty contato.email}">
