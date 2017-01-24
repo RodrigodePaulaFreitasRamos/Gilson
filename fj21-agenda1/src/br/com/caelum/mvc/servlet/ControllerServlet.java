@@ -25,6 +25,7 @@ public class ControllerServlet extends HttpServlet{
 			Logica logica = (Logica) classe.newInstance();
 			String pagina = logica.executa(request, response);
 			
+			System.out.println("Executei na servelet");
 			request.getRequestDispatcher(pagina).forward(request, response);
 			
 		} catch (Exception e) {

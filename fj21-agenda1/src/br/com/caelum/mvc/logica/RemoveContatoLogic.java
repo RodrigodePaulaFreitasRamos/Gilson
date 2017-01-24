@@ -11,9 +11,9 @@ public class RemoveContatoLogic implements Logica {
 	public String executa(HttpServletRequest req, HttpServletResponse res)
 			throws Exception {
 		
-		return "mvc?logica=ListaContatosLogic";
 		
-		/*long id = Long.parseLong(req.getParameter("id"));
+		
+		long id = Long.parseLong(req.getParameter("id"));
 		
 		Contato contato = new Contato();
 		contato.setId(id);
@@ -22,7 +22,7 @@ public class RemoveContatoLogic implements Logica {
 		
 		System.out.println("Excluindo contato. . .");
 		
-		return "lista-contatos.jsp";*/
+		return "mvc?logica=ListaContatosLogic";
 		
 	}
 
