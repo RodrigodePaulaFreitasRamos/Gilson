@@ -60,6 +60,6 @@
 		</c:forEach>
 
 	</table>
-
+<a href="logout"> Sair do sistema</a>
 </body>
 </html>
